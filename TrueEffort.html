@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAZIL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0F172A;
+    color: #ffffff; 
+    line-height: 1.6;
+}
+header {
+    background: #0F172A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 48px;
+    font-weight: bold;
+    color:aquamarine;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #94A3B8;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+header nav ul a:hover {
+    color:#10B981;
+}
+section {
+    padding: 4-px 10%;
+}
+
+.hero {
+    background: linear-gradient(35deg,
+    #3B82F6,
+    #06B6D4,
+    #10B981
+);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 75px 10%;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    }
+
+.hero .highlight {
+    color: rgb(255, 255, 255);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+#projects h2, #contact h2 {
+    text-align: center;
+    font-size:28px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    color:bisque;
+}
+
+.project-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    gap: 300 px;
+}
+.project-card {
+    background: #3B82F6;
+    padding : 25px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.478);
+    transition: transform 0.1s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #000000;
+}
+.project-card p {
+    margin-bottom: 20px;
+    color:#000000;
+}
+.project-card a {
+    color: #1E293B;
+    font-weight: bold;
+    text-decoration: none;
+}
+#contact {
+    background: #0F172A;
+    text-align: center;
+}
+#contact p {
+    margin-bottom: 10px;
+}
+.socials a {
+    color: #10B981;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    background: #18181B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+
+}
+</style>
+<body>
+    <header>
+        <div class="logo">Fazil's Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="hero">
+        <h1>Hi, I'm <span class="highlight">Mohamed Fazil</span></h1>
+        <p>Hello! I'm a passionate and motivated software development student with a strong interest in designing, building, and optimizing technology-driven solutions. I enjoy exploring programming, problem-solving, and modern software development practices while continuously expanding my technical knowledge.
+
+My academic journey has provided me with a foundation in programming, data structures, databases, operating systems, and software engineering principles. I am particularly interested in developing applications that solve real-world challenges and create meaningful user experiences.
+
+I am committed to continuous learning, embracing new technologies, and improving my skills through hands-on projects and practical experience. My goal is to grow as a software developer, contribute to innovative projects, and build impactful solutions that make a difference.
+
+Thank you for visiting my portfolio. I look forward to connecting, collaborating, and exploring new opportunities in the world of software development.
+        </p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Blah Blah Blah</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p> Blah Blah more</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact me</h2>
+        <p>Reach out to me for a totally great work experience</p>
+        <img src="mailoo.webp" height = 70px width = 70px>
+        <p>Email: <a href="mailto:mohamedfazil0022.fx@gmail.com">mohamedfazil0022.fx@gmail.com</a></p>
+        <div class = "socials">
+            <img src= "gittycat.webp" height = 70px width = 70px>
+            <p>Github: <a href="https://github.com/LostFromPage" target="_blank">LostFromPage</a></p>
+            
+        
+        </div>
+    
+    
+    </section>
+</body>
+</html>
